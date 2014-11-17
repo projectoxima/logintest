@@ -1844,6 +1844,16 @@ textarea.input-lg {
     float: none;
     margin-left: 0;
   }
+  .form-inline .row {
+    margin-bottom: 15px;
+  }
+  .form-inline.modal-form input {
+    width: 160px !important;
+  }
+  .form-inline.modal-form .form-group,
+  .form-inline.modal-form .btn {
+    margin-left: 10px;
+  }
 }
 .form-horizontal .control-label,
 .form-horizontal .radio,
@@ -2267,8 +2277,8 @@ input[type="button"].btn-block {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('../bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -6030,6 +6040,9 @@ a:focus {
 .font-14 {
   font-size: 14px;
 }
+.font-2em {
+  font-size: 2em;
+}
 /* Font colors */
 .text-dark {
   color: #555555;
@@ -6450,6 +6463,13 @@ fieldset[disabled] .btn-yellow.active {
   font-weight: 300;
   letter-spacing: 0;
   margin-bottom: 5px;
+}
+#content .date-current {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 0;
+  padding-top:10px;
 }
 #content .content-title {
   color: #666666;
@@ -8212,7 +8232,7 @@ div[data-role="editor-toolbar"] {
   border-radius: 7px 7px 7px 7px;
   box-shadow: 0 1px 4px #D3D3D3;
   margin: 50px auto;
-  padding: 0px 60px 40px;
+  padding: 55px 60px 60px;
   position: relative;
   min-height: 300px;
 }
@@ -8996,9 +9016,4 @@ ul.stats li small {
 /* WELL BOTTOM */
 .well.well-bottom {
   border-radius: 0 0 4px 4px;
-}
-.ajax_loading
-{
-  margin:15% auto 0 auto;
-  text-align:center;
 }

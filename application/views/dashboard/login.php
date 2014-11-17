@@ -6,7 +6,7 @@
     <title>Oxima Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <meta name="description" content="Cipaganti - Aplikasi Pengajuan Anggaran">
-    <meta name="author" content="Aegis">
+    <meta name="author" content="Oxima">
 
     <!--<link rel="shortcut icon" type="image/png" href="<?php echo base_url(); ?>img/favicon.ico.png">-->
 
@@ -20,27 +20,25 @@
     -->
 
     <!-- BOOTSTRAP -->
-    <link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>cloud-admin/bootstrap-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>bootstrap-dist/css/bootstrap.min.css" />
 
     <!-- CLOUD ADMIN -->
-    <link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>cloud-admin/css/cloud-admin.css" />
-    <link rel="stylesheet" type="text/css"  href="<?php echo base_url(); ?>cloud-admin/css/responsive.css" />
-
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>cloud-admin/css/cloud-admin.css" >
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>cloud-admin/font-awesome/css/font-awesome.min.css">
-
-    <!-- UNIFORM -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>cloud-admin/js/uniform/css/uniform.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/cloud-admin.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>font-awesome/css/font-awesome.min.css">
 
     <!-- ANIMATE -->
-    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>cloud-admin/css/animatecss/animate.min.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>css/animatecss/animate.min.css" />
+
+    <!-- UNIFORM -->
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>js/uniform/css/uniform.default.min.css" />
 
     <!-- FONTS -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
 
     <style type="text/css">
     .login-box {
-      width: 500px !important;
+      width: 400px !important;
     }
     </style>
   </head>
@@ -172,22 +170,25 @@
     <!-- Placed at the end of the document so the pages load faster -->
 
     <!-- JQUERY -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>cloud-admin/js/jquery/jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery/jquery-2.0.3.min.js"></script>
 
     <!-- JQUERY UI-->
-    <script type="text/javascript" src="<?php echo base_url(); ?>cloud-admin/js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.min.js"></script>
+
+    <!-- JQUERY Cookie-->
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/jQuery-Cookie/jquery.cookie.min.js"></script>
 
     <!-- BOOTSTRAP -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>cloud-admin/bootstrap-dist/js/bootstrap.min.js"></script>    
+    <script type="text/javascript" src="<?php echo base_url(); ?>bootstrap-dist/js/bootstrap.min.js"></script>    
     
     <!-- UNIFORM -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>cloud-admin/js/uniform/jquery.uniform.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/uniform/jquery.uniform.min.js"></script>
 
     <!-- BACKSTRETCH -->
-    <script type="text/javascript" src="<?php echo base_url(); ?>cloud-admin/js/backstretch/jquery.backstretch.min.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>js/backstretch/jquery.backstretch.min.js"></script>
 
     <!-- CUSTOM SCRIPT -->
-    <script src="<?php echo base_url(); ?>cloud-admin/js/script.js"></script>
+    <script src="<?php echo base_url(); ?>js/script.js"></script>
     <script>
       $(document).ready(function() {
         App.setPage("login_bg");  //Set current page

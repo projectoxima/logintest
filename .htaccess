@@ -2,7 +2,7 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule .* index.php/$0 [PT,L]
-RewriteCond $1 !^(index\.php|assets|css|font|img|js|robots\.txt)
+RewriteCond $1 !^(index\.php|bootstrap-dist|css|font-awesome|img|js|robots\.txt)
 
 # BEGIN Compress text files
 <ifModule mod_deflate.c>
@@ -47,4 +47,4 @@ RewriteCond $1 !^(index\.php|assets|css|font|img|js|robots\.txt)
  
 # BEGIN Turn ETags Off
 FileETag None
-# END Turn ETags Off 
+# END Turn ETags Off

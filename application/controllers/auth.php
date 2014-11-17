@@ -2,6 +2,11 @@
 
 class Auth extends CI_Controller {
 
+	public function __construct(){
+		parent::__construct();
+		$this->load->model('login/users');
+	}
+
 	public function index()
 	{
 		$this->load->view('404.html');	
@@ -36,7 +41,7 @@ class Auth extends CI_Controller {
 
 	public function logout() {
 		$this->session->sess_destroy();	
-		redirect(base_url() . 'auth/login');
+		redirect(base_url() . 'home');
 	}
 
 	public function forgot_password() {
@@ -50,8 +55,8 @@ class Auth extends CI_Controller {
 		    'protocol'  => 'smtp',
 		    'smtp_host' => 'ssl://smtp.googlemail.com',
 		    'smtp_port' => '465',
-		    'smtp_user' => 'taufik.oxima@gmail.com',
-		    'smtp_pass' => 'taufikoximaproject',
+		    'smtp_user' => 'dev@aegis.co.id',
+		    'smtp_pass' => 'aegis10201',
 		    'mailtype'  => 'html',
 		    'starttls'  => true,
 		    'newline'   => "\r\n"
@@ -59,7 +64,7 @@ class Auth extends CI_Controller {
 	 
 	    $this->load->library('email', $email_config);
 
-	    $this->email->from('noreply@Oxima.co.id', 'Password Reset');
+	    $this->email->from('noreply@Aegis.co.id', 'Password Reset');
 	    $this->email->to($pesan);
 	 
 	    $this->email->subject('Reset Password');
